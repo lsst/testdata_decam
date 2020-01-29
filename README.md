@@ -9,6 +9,8 @@ from [NOAO Science Archive](http://www.portal-nvo.noao.edu) and
 
 The file `rawData/raw/c4d_150227_012718_ori-stripped.fits.fz` is taken from [ap_verify_hits2015](https://github.com/lsst/ap_verify_hits2015), with all of the image data set to 0 to reduce file size.
 This file contains all HDUs in the original file, and is useful for testing handling of "normal" multi-HDU DECam data.
+The `rawData/raw/c4d_150227_012718_ori-stripped-shuffled.fits.fz` is identical to the above except that the HDU ordering has been randomly shuffled.
+This file is useful for testing reading of files that may not have the "typical" HDU ordering.
 
 The file `rawData/raw/raw.fits` contains the imaging data from two detectors (1 and 25).
 
