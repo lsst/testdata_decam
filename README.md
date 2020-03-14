@@ -14,6 +14,11 @@ This file is useful for testing reading of files that may not have the "typical"
 
 The file `rawData/raw/raw.fits` contains the imaging data from two detectors (1 and 25).
 
+The `hits2015-zeroed` directory contains files from the `ap_verify_ci_hits2015` dataset that have had their image data set to the HDU number and then Hcompressed with `fpack` to reduce their size.
+These files are not useful for testing pipelines, but they can be used to test butlers (ingestion and gen2 to gen3 conversion).
+`calibingested/` is a gen2 calib repo linking to the hits2015 calibration files.
+`ingested/` is a gen2 butler repo linking to the hits2015 raw files.
+
 Git LFS
 -------
 

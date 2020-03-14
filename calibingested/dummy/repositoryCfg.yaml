@@ -1,0 +1,9 @@
+!RepositoryCfg_v1
+_mapper: !!python/name:lsst.obs.decam.decamMapper.DecamMapper ''
+_mapperArgs:
+  calibRoot: /data/ap_verify_ci_hits2015/gen2-output/calibingested
+_parents:
+- ../../ingested
+_policy: null
+_root: null
+dirty: true
