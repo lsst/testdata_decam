@@ -30,6 +30,10 @@ These were constructed using `cp_pipe`'s `constructBias.py` and `constructFlat.p
 Both files are for CCD 47, but have had all of the image data set to 0 to reduce file size.
 They are used to test parsing of calibration products as part of the gen2 calibration ingestion process.
 
+Gen3 Conversion
+---------------
+With weekly w_2022_28 + DM-34862 obs_decam, run `./scripts/convert_repo.sh` followed by `./scripts/export_gen3.py`
+
 Git LFS
 -------
 
