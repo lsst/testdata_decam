@@ -30,7 +30,7 @@ with butler.export(filename="repo/exports.yaml") as export:
     export.saveCollection('skymaps')
 
     # Dimension data
-    for name in butler.registry.dimensions.getStaticElements():
+    for name in butler.dimensions.getStaticElements():
         if str(name).startswith('visit'):
             records = butler.registry.queryDimensionRecords(visit_dim)
             export.saveDimensionData(visit_dim, records)
